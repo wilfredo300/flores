@@ -49,7 +49,7 @@ function mostrarMensaje(){
 }
 function aparecerBotonContinuar() {
     const btn = document.createElement("button");
-    btn.textContent = "Haz clic para continuar";
+    btn.textContent = "Unas fotitos??";
     btn.classList.add("btn-continuar");
     document.querySelector(".contenedor-mensaje").appendChild(btn);
 
@@ -96,7 +96,7 @@ function iniciarCarrusel() {
             descripcion.textContent = misImagenes[indiceImagen].descripcion;          
             indiceImagen++;
             // Espera 3 segundos y muestra la siguiente
-            setTimeout(mostrarSiguiente, 5000);
+            setTimeout(mostrarSiguiente, 8000);
         } else {
             descripcion.textContent = "¡Te Amo! ❤️";
         }
