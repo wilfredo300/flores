@@ -61,8 +61,8 @@ function aparecerBotonContinuar() {
 
 // Lógica del Carrusel
 const misImagenes = [
-    {src:"./img/img1.jpg", descripcion:"Nuestro matrimoio"},
-    {src:"./img/img2.jpg", descripcion:"Yo todo galán (como siempre)"},
+    {src:"./img/img1.JPG", descripcion:"Nuestro matrimoio"},
+    {src:"./img/img2.JPG", descripcion:"Yo todo galán (como siempre)"},
     {src:"./img/img3.jpeg", descripcion:"Me gusto esta foto jeje"},
     {src:"./img/img4.jpeg", descripcion:"Con los vasitos"},
     {src:"./img/img5.jpeg", descripcion:"No me acuerdo de esto :V"},
