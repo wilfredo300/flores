@@ -103,12 +103,16 @@ function iniciarCarrusel() {
 
     function mostrarSiguiente() {
         if (indiceImagen < misImagenes.length) {
-            imgCarrusel.src = misImagenes[indiceImagen].src;
-            imgCarrusel.animate([{ opacity: 0 }, { opacity: 1 }], { duration: 1000 });
-            descripcion.textContent = misImagenes[indiceImagen].descripcion;          
-            indiceImagen++;
-            // Espera 3 segundos y muestra la siguiente
-            setTimeout(mostrarSiguiente, 8000);
+            imgCarrusel.style.opacity = 0;
+            setTimeout(()=>{
+                imgCarrusel.src = misImagenes[indiceImagen].src;
+                descripcion.textContent = misImagenes[indiceImagen].descripcion;          
+                
+                imgCarrusel.style.opacity = 1;
+                indiceImagen++;
+                // Espera 3 segundos y muestra la siguiente
+                setTimeout(mostrarSiguiente, 6000);
+            },500);
         } else {
             descripcion.textContent = "¡Te Amo! ❤️";
         }
