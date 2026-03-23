@@ -1,0 +1,71 @@
+html{
+    box-sizing: border-box;
+    color: var(--gris-texto);
+    padding: 0;
+    margin: 0; 
+}
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+#flor{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: pink
+}
+#flor img{
+    height: 60vh;
+    transition: none;
+}
+#flor .hover{
+    height: 60vh;
+    transition: all .3s ease 
+}
+#flor .hover:hover{
+    height: 70vh;
+    cursor: pointer;
+}
+
+.petals-container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: coral;
+}
+.petal{
+    position: absolute;
+    top: -50px;
+    width: 40px;
+    height: 40px;
+    background-image: url(./img/petal.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.contenedor-mensaje{
+    position: fixed; 
+    top: 0;
+    left: 0;
+    margin: 40px;
+    width: 100%;
+    height: 100%;
+    background-color: #F5C90B80;
+    padding: 50px;
+    overflow-y: auto;
+}
+.contenedor-mensaje h2{
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    font-size: 40px;
+}
+.contenedor-mensaje p{
+    font-size: 20px;
+    text-align: center;
+    color: white;
+}
