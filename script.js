@@ -1,3 +1,29 @@
+const misImagenes = [
+    {src:"./img/img1.JPG", descripcion:"Nuestro matrimoio"},
+    {src:"./img/img2.JPG", descripcion:"Yo todo galán (como siempre)"},
+    {src:"./img/img3.jpeg", descripcion:"Me gusto esta foto jeje"},
+    {src:"./img/img4.jpeg", descripcion:"Con los vasitos"},
+    {src:"./img/img5.jpeg", descripcion:"No me acuerdo de esto :V"},
+    {src:"./img/img6.jpeg", descripcion:"Ya nos querían sacar hijos jsjs"},
+    {src:"./img/img7.jpeg", descripcion:"Muy bonito HP (Happy Pirthday"},
+    {src:"./img/img8.jpeg", descripcion:"Me salio rica la torta no?"},
+    {src:"./img/img9.jpeg", descripcion:"La unica que encontre de nuestro aniversario :'v"},
+    {src:"./img/img10.jpeg", descripcion:"Mi miss sirenita, tan linda ella"},
+    {src:"./img/img11.jpeg", descripcion:"De la manito ..."},
+    {src:"./img/img12.jpeg", descripcion:"Eres hermosa, no lo olvides"},
+    
+]; // Función para precargar todas las imágenes en el caché del navegador
+function precargarImagenes() {
+    misImagenes.forEach((imagen) => {
+        const img = new Image();
+        img.src = imagen.src;
+    });
+}
+
+// La ejecutamos de inmediato
+precargarImagenes();
+
+
 const petalsContainer = document.querySelector(".petals-container");
 const florContainer = document.querySelector("#flor");
 const florImg = document.querySelector("#flor img");
@@ -60,21 +86,7 @@ function aparecerBotonContinuar() {
 }
 
 // Lógica del Carrusel
-const misImagenes = [
-    {src:"./img/img1.JPG", descripcion:"Nuestro matrimoio"},
-    {src:"./img/img2.JPG", descripcion:"Yo todo galán (como siempre)"},
-    {src:"./img/img3.jpeg", descripcion:"Me gusto esta foto jeje"},
-    {src:"./img/img4.jpeg", descripcion:"Con los vasitos"},
-    {src:"./img/img5.jpeg", descripcion:"No me acuerdo de esto :V"},
-    {src:"./img/img6.jpeg", descripcion:"Ya nos querían sacar hijos jsjs"},
-    {src:"./img/img7.jpeg", descripcion:"Muy bonito HP (Happy Pirthday"},
-    {src:"./img/img8.jpeg", descripcion:"Me salio rica la torta no?"},
-    {src:"./img/img9.jpeg", descripcion:"La unica que encontre de nuestro aniversario :'v"},
-    {src:"./img/img10.jpeg", descripcion:"Mi miss sirenita, tan linda ella"},
-    {src:"./img/img11.jpeg", descripcion:"De la manito ..."},
-    {src:"./img/img12.jpeg", descripcion:"Eres hermosa, no lo olvides"},
-    
-]; // Pon tus rutas reales
+// Pon tus rutas reales
 let indiceImagen = 0;
 
 function iniciarCarrusel() {
